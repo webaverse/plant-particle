@@ -1,5 +1,5 @@
-# plant-partices
+# plant-particles
 
-three.quarks library used for partices
+three.quarks library used for particles
 
 
