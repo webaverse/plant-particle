@@ -284,9 +284,9 @@ export default () => {
 
   //console.log(itemPos);
 
-  demo.setPosition(new Vector3(0,0,0));
+  //demo.setPosition(new Vector3(0,0,0));
 
-  //demo.setPosition(itemPos);
+  demo.setPosition(itemPos);
 
 	// activateCb = () => {
 	// 	demo.changeVisible();
