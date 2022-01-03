@@ -120,8 +120,8 @@ class ParticleDemo {
         flash.addBehavior(new ColorOverLife(new ColorRange(new Vector4(0.011764705882352941, 0.3333333333333333, 0.11764705882352941, 1), new Vector4(0.5764705882352941, 0.9607843137254902, 0.6745098039215687, 0))));
         flash.addBehavior(new SizeOverLife(new PiecewiseBezier([[new Bezier(1, 0.95, 0.75, 0), 0]])));
         flash.emitter.name = 'flash';
-		    flash.emitter.rotation.set(-1.5707963267948966, 0, 0);
-		    //flash.emitter.position.set(0,0,0);
+	    flash.emitter.rotation.set(-1.5707963267948966, 0, 0);
+	    //flash.emitter.position.set(0,0,0);
         //flash.emitter.system.endEmit();
         //flash.emitter.system.restart();
         group.add(flash.emitter);
@@ -182,6 +182,7 @@ class ParticleDemo {
 		//group.scale.set(0.01,0.01,0.01);
         this.scene.add(group);
         this.groups.push(group);
+        group.updateMatrixWorld();
 		
 		
 		
@@ -214,6 +215,7 @@ class ParticleDemo {
 		if (this.batchRenderer)
 		{
 			this.batchRenderer.position.copy(pos);
+            this.batchRenderer.updateMatrixWorld();
 		}
 	}
 	
